@@ -369,7 +369,7 @@ void lotto::Set_DBContent(vector<int> zahlen_vec, vector<int> superzahlen_vec, s
 void lotto::Get_DBContent(string Table) {
   Driver *driver = mariadb::get_driver_instance();
   SQLString url("jdbc:mariadb://localhost:3306/Lotto_db");
-  Properties properties({{"user", "user"}, {"password", "Micimo52rita+"}});
+  Properties properties({{"user", "user"}, {"password", "password"}});
   unique_ptr<Connection> conn(driver->connect(url, properties));
   unique_ptr<Statement> stmt(conn->createStatement());
 
